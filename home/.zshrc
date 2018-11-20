@@ -109,5 +109,3 @@ autoload -Uz compinit && compinit -i
 export DEFAULT_USER="vichenze@vichenze-desktop"
 
 prompt_context(){} 
-
-source "$HOME/.homesick/repos/homeshick/homeshick.sh"
