@@ -1,0 +1,25 @@
+[alias]
+    amend = commit --amend
+    st = status
+    who = shortlog -sne
+    oneline = log --pretty=oneline --abbrev-commit --graph
+    changes = diff --name-status
+    dic = diff --cached
+    diffstat = diff --stat
+    lc = !git oneline ORIG_HEAD.. --stat --no-merges
+    addm = !git-ls-files -m -z | xargs -0 git-add && git status
+    addu = !git-ls-files -o --exclude-standard -z | xargs -0 git-add && git status
+    rmm = !git ls-files -d -z | xargs -0 git-rm && git status
+    mate = !git-ls-files -m -z | xargs -0 mate
+    mateall = !git-ls-files -m -o --exclude-standard -z | xargs -0 mate
+	ci = commit
+	co = checkout
+[user]
+	name = vichenze
+	email = vichenze@gmail.com
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+[core]
+	excludesfile = /home/vichenze/.gitignore_global
+[push]
+	default = simple
